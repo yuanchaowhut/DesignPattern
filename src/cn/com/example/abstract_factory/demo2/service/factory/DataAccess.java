@@ -15,7 +15,7 @@ import cn.com.example.abstract_factory.demo2.service.user.UserServiceXML;
 public class DataAccess {
     //这里用常量模拟配置文件.当需要切换数据库时,把另一个注释打开,当前注释注释掉.
     private static final String db = "XML";
-    //private static final String db = "Mysql";
+    //private statics final String db = "Mysql";
 
     private static IUserService userService;
     private static IDepartmentService departmentService;
