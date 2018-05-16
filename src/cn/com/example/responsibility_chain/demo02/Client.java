@@ -35,7 +35,7 @@ public class Client {
 
         //执行请求
         InterceptorChain chain = new InterceptorChain(0, request, interceptors);
-        Response response = chain.proceed(request);
+        Response response = chain.proceed();
 
         System.out.println(response.toString());
     }

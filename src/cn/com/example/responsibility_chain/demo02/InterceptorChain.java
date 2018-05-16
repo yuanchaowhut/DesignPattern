@@ -45,7 +45,7 @@ public class InterceptorChain {
         this.interceptors = interceptors;
     }
 
-    public Response proceed(Request request) {
+    public Response proceed() {
         if (index >= interceptors.size()) {
             return null;
         }

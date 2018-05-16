@@ -22,7 +22,7 @@ public class CallServerInterceptor extends Interceptor {
         Response response = new Response();
         response.setCode(200);
         response.setContent("返回结果：用户名：tom, 年龄：28，身高：172cm，爱好：编程");
-//        Response response = chain.proceed(request);  不需要往下走了。
+//        Response response = chain.proceed();  不需要往下走了。
 
         return response;
     }

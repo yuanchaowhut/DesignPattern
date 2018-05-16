@@ -19,7 +19,7 @@ public class ConnectInterceptor extends Interceptor {
 
         System.out.println(String.format("%s开始处理请求-------------连接服务器----------请求名：%s，请求类型：%s，url：%s", this.name, request.getName(), request.getType(), request.getUrl()));
 
-        Response response = chain.proceed(request);
+        Response response = chain.proceed();
 
         //do something
 

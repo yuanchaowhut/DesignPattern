@@ -19,7 +19,7 @@ public class RetryInterceptor extends Interceptor {
 
         System.out.println(String.format("%s开始处理请求-------------处理重试与重定向----------请求名：%s，请求类型：%s，url：%s", this.name, request.getName(), request.getType(), request.getUrl()));
 
-        Response response = chain.proceed(request);
+        Response response = chain.proceed();
 
         //do something
 
