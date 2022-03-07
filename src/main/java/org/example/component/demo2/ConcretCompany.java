@@ -42,7 +42,7 @@ public class ConcretCompany extends Company {
     }
 
     protected void add(Company company) {
-        if (company.isLeaf()) {
+        if (this.isLeaf()) {
             System.out.println(String.format("%s是一个具体职能部门，没有新增下级节点功能", this.name));
         } else {
             children.add(company);
@@ -50,7 +50,7 @@ public class ConcretCompany extends Company {
     }
 
     protected void remove(Company company) {
-        if (company.isLeaf()) {
+        if (this.isLeaf()) {
             System.out.println(String.format("%s是一个具体职能部门，无法新增下级节点", this.name));
         } else {
             children.remove(company);
